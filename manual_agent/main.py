@@ -4,7 +4,7 @@ from summarizer import run_llama
 from formatter import save_markdown
 
 if __name__ == "__main__":
-    pdf_path = "input.pdf"
+    pdf_path = "../input.pdf"
     sections = extract_pdf_text(pdf_path)
 
     print(f"✅ Found {len(sections)} sections in the PDF\n")
