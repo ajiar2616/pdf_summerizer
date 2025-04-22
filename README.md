@@ -34,6 +34,9 @@ git clone https://github.com/YOUR_USERNAME/pdf-summarizer-agent.git
 cd pdf_summarizer
 ```
 
+### 2. Choose the Agentic (Manual/LangChain)
+Before installing all the dependencies choose the right agentic. We have built this with both manual which is completely setup belongs to local or with an Agentic Library (LangChain). Once you navigate to the specific folder you can continue with the below mentioned steps.
+
 ### 2. **Install Python dependencies**
 
 ```bash
@@ -88,13 +91,25 @@ This will:
 
 ```graphql
 pdf_summarizer/
-├── main.py               # Orchestrates the workflow
-├── pdf_reader.py         # Extracts text from each page
-├── summarizer.py         # Sends prompts to local LLM via Ollama
-├── formatter.py          # Writes the Markdown output
-├── requirements.txt      # Dependencies
-├── input.pdf             # The document to summarize
-└── summary.md            # Final output
+├── manual_agent/
+│   ├── main.py               ← Manual version
+│   ├── pdf_reader.py
+│   ├── summarizer.py
+│   ├── formatter.py
+│   ├── requirements.py
+│
+├── langchain_agent/
+│   ├── main.py                ← LangChain version
+│   ├── agent.py
+│   ├── tools/
+│   │   ├── pdf_tool.py
+│   │   ├── summarize_tool.py
+│   │   └── formatter_tool.py
+│   ├── requirements.txt
+│   ├── agent.py
+│   ├── main.py
+│   ├── agent.py
+└── input.pdf
 ```
 
 ---
