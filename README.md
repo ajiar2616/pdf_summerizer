@@ -97,7 +97,6 @@ pdf_summarizer/
 │   ├── summarizer.py
 │   ├── formatter.py
 │   ├── requirements.py
-│   ├── input.pdf 
 │
 ├── langchain_agent/
 │   ├── main.py                ← LangChain version
