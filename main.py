@@ -1,4 +1,4 @@
-# Main Running File of the Project
+# PMain Running File of the Project
 from pdf_reader import extract_pdf_text
 from summarizer import run_llama
 from formatter import save_markdown
